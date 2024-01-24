@@ -1,0 +1,417 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="wellQuest Web Application Home Page">
+    <meta name="author" content="wellQuest">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>wellQuest - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/home-style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+  </head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="{% static 'assets/images/wellQuest-logo.png'%}" alt="wellQuest">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#mentors">Fitness Mentors</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Available Apps</a>
+                              <ul class="sub-menu">
+                                  <li><a href="{% url 'cal_count' %}" target="_blank">Calorie Count</a></li>
+                                  <li><a href="#" target="_blank">Mental Health</a></li>
+                                  <li><a href="#">Diet Planner</a></li>
+                                  <li><a href="{% url 'exercises' %}" target="_blank">Find Exercise!</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="#motivations">Motivations</a></li> 
+                          <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text">
+            <h6>Welcome to wellQuest</h6>
+            <h2>Best Place To Stay Healthy & <em>Well!</em></h2>
+            <div class="main-button-gradient">
+              <div class="scroll-to-section"><a href="#contact-section">Join Now!</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="{% static 'assets/images/banner-right-image.png'%}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="mentors" id="mentors">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Fitness Mentors</h6>
+            <h4>Mentors <em>Online</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item"><a href="https://www.youtube.com/@TheBodyCoachTV" target = "_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.jpg'%}" alt="">
+                </div>
+                <h4>Joe Wicks<br>(The Body Coach)</h4>
+                <p> Known for his HIIT (High-Intensity Interval Training) workouts and nutritional advice.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@blogilates" target="_blank">
+              <div class="service-item"> 
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.jpg'%}" alt="">
+                </div>
+                <h4>Blogilates (Cassey Ho)</h4>
+                <p>Provides Pilates workouts, fitness challenges, and lifestyle tips.</p>
+              </div>
+            </div></a>
+            <div class="item"> <a href="https://www.youtube.com/@athleanx" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.jpg'%}" alt="">
+                </div>
+                <h4>Athlean-X (Jeff Cavaliere)</h4>
+                <p> Offers science-based workout advice, particularly focusing on strength training and body mechanics.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@yogawithadriene" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.jpg'%}" alt="">
+                </div>
+                <h4>Yoga with Adriene (Adriene Mishler)</h4>
+                <p>Specializes in yoga practices for various levels, promoting holistic well-being.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@TheBodyCoachTV" target = "_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.jpg'%}" alt="">
+                </div>
+                <h4>Joe Wicks<br>(The Body Coach)</h4>
+                <p> Known for his HIIT (High-Intensity Interval Training) workouts and nutritional advice.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@blogilates" target="_blank">
+              <div class="service-item"> 
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.jpg'%}" alt="">
+                </div>
+                <h4>Blogilates (Cassey Ho)</h4>
+                <p>Provides Pilates workouts, fitness challenges, and lifestyle tips.</p>
+              </div>
+            </div></a>
+            <div class="item"> <a href="https://www.youtube.com/@athleanx" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.jpg'%}" alt="">
+                </div>
+                <h4>Athlean-X (Jeff Cavaliere)</h4>
+                <p> Offers science-based workout advice, particularly focusing on strength training and body mechanics.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@yogawithadriene" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.jpg'%}" alt="">
+                </div>
+                <h4>Yoga with Adriene (Adriene Mishler)</h4>
+                <p>Specializes in yoga practices for various levels, promoting holistic well-being.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@TheBodyCoachTV" target = "_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.jpg'%}" alt="">
+                </div>
+                <h4>Joe Wicks<br>(The Body Coach)</h4>
+                <p> Known for his HIIT (High-Intensity Interval Training) workouts and nutritional advice.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@blogilates" target="_blank">
+              <div class="service-item"> 
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.jpg'%}" alt="">
+                </div>
+                <h4>Blogilates (Cassey Ho)</h4>
+                <p>Provides Pilates workouts, fitness challenges, and lifestyle tips.</p>
+              </div>
+            </div></a>
+            <div class="item"> <a href="https://www.youtube.com/@athleanx" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.jpg'%}" alt="">
+                </div>
+                <h4>Athlean-X (Jeff Cavaliere)</h4>
+                <p> Offers science-based workout advice, particularly focusing on strength training and body mechanics.</p>
+              </div>
+            </div></a>
+            <div class="item"><a href="https://www.youtube.com/@yogawithadriene" target="_blank">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.jpg'%}" alt="">
+                </div>
+                <h4>Yoga with Adriene (Adriene Mishler)</h4>
+                <p>Specializes in yoga practices for various levels, promoting holistic well-being.</p>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="motivations" id="motivations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Motivations</h6>
+            <h4>What They <em>Think</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <p>“Take care of your body. It's the only place you have to live.”</p>
+                <h4>Jim Rohn</h4>
+                <span>American entrepreneur &amp; Author</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“It is exercise alone that supports the spirits and keeps the mind in vigor.”</p>
+                <h4>Marcus Tullius Cicero</h4>
+                <span>Roman statesman and lawyer</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.”</p>
+                <h4>Arnold Schwarzenegger</h4>
+                <span>American Actor</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“I'm not a gym person, but I make sure I am active. I play sports, walk a lot, and avoid elevators.”</p>
+                <h4>Deepika Padukone</h4>
+                <span>Indian Actress</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“Exercise is king. Nutrition is queen. Put them together, and you've got a kingdom.”</p>
+                <h4>Jack LaLanne</h4>
+                <span>Professional Fitness Coach</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“The food you eat can be either the safest and most powerful form of medicine or the slowest form of poison.”</p>
+                <h4>Ann Wigmore</h4>
+                <span>American Advocate</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“Health is a state of body. Wellness is a state of being.”</p>
+                <h4>J. Stanford</h4>
+                <span>Author</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+            <div class="item">
+              <p>“Good health is not something we can buy. However, it can be an extremely valuable savings account.”</p>
+                <h4>Anne Wilson Schaef</h4>
+                <span>American Author</span>
+                <img src="{% static 'assets/images/quote.png'%}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map">
+          
+            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d56070.61966685545!2d77.33599584869691!3d28.557336560868816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitals%20near%20me!5e0!3m2!1sen!2sin!4v1705863682378!5m2!1sen!2sin" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-1">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-hospital-o"></i>
+                  </div>
+                  <h4>Hospitals</h4>
+                  <span>Near By You!</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-connectdevelop"></i>
+                  </div>
+                  <h4>Mail Us at</h4>
+                  <span>wq@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Contact us</h6>
+                  <h4>Say <em>Hello</em></h4>
+                  <p>If you have any inquiries, please feel free to drop us a message, and we will get in touch with you shortly. Your questions and concerns are important to us, and we are committed to providing prompt and helpful assistance. Thank you for reaching out!</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">
+            <a href="#top">wellQuest</a><br>
+            Team - BitVibe
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</html>

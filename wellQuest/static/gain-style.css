@@ -1,0 +1,105 @@
+body {
+  background-color: #f6fbf4;
+}
+
+.logo {
+  width: 13em;
+  height: 63px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h1 strong {
+  font-weight: 600;
+  color: #4b8673;
+}
+
+.inputstyle {
+  padding: 20px !important;
+}
+
+.whoop {
+  background-color: #5fd068;
+  width: 8em;
+  font-size: 30px !important;
+  color: #ffffff;
+}
+
+.caloriescont {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.caloriescont ul {
+  padding: 0px;
+}
+
+.caloriescont ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+  width: 80%;
+}
+
+.caloriescont h3 {
+  color: #4b8673;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.caloriescont h5 {
+  color: #4b8673;
+}
+
+.servingsize {
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+}
+ul.social-icons li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+ul.social-icons {
+  text-align: center;
+  padding: 0%;
+}
+ul.social-icons li a {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 44px;
+  background-color: #fff;
+  color: #5fd068;
+  border-radius: 50%;
+  transition: all .5s;
+}
+ul.social-icons li a:hover {
+  background-color: #5fd068;
+  color: #fff;
+}
+p.copyright {
+  text-align: center;
+  color: #5fd068;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin: 4% 0px; */
+  font-weight: 500;
+}
+p.copyright a {
+  font-style: normal;
+  font-weight: 700;
+  color: #5fd068;
+}
+.footer{
+  margin-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
