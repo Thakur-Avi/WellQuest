@@ -29,6 +29,43 @@ The landing page doesn't just stop at inspiration; it also helps you navigate yo
 - **Muscle-Specific Exercises:**
   - Receive personalized exercise recommendations targeting specific muscle groups. Tailor your fitness routine to achieve a harmonious and well-rounded physique.
 
+## Prequisites:
+1. wellQuest is a python based web application so it is necessary to have python in your system. you can download the latest version of python from it's official website.
+2. Must have 'virtualenv' installed in your system. You can install it by entering the command 'pip install virtualenv' in your terminal.
+
 ## How to Embark on Your WellQuest Journey:
 
 Clone this repository, follow our straightforward setup instructions, and embark on a wellness journey that transcends expectations. WellQuest is not just an application; it's a companion dedicated to sculpting a healthier, more vibrant version of you.
+
+To effortlessly set up and run WellQuest on your local environment, follow these simple steps:
+
+### 1. Navigate to Scripts in the `env` folder:
+   - Open the `env` folder associated with your WellQuest project.
+   - Locate the `Scripts` folder within it.
+
+### 2. Open Command Prompt in this directory:
+   - Right-click inside the `Scripts` folder.
+   - Select "Open Command Prompt Here."
+
+### 3. Activate the Virtual Environment:
+   - Type the 'Activate' command and press Enter.
+     ```
+     activate
+     ```
+   - This will initialize the virtual environment, ensuring a clean and isolated workspace.
+
+### 4. Navigate Back to the Main Directory:
+   - Use the 'cd ..' command to return to the directory containing the `env` folder.
+
+### 5. Enter the WellQuest Directory:
+   - Move to the WellQuest directory using the 'cd wellQuest' command in the terminal.
+
+### 6. Start the WellQuest Server:
+   - Type 'python manage.py runserver' in the terminal and press Enter.
+     ```
+     python manage.py runserver
+     ```
+   - The server will start, and you can access WellQuest locally at `localhost:8000`.
+
+### 7. Quit the Server:
+   - To stop the server, navigate to the command prompt and press 'Ctrl+C.'
