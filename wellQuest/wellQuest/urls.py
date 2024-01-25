@@ -6,4 +6,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('cal_count/', include('cal_count.urls')),
     path('find_exercise/', include('find_exe.urls')),
+    path('fitness_index/', include('fitness_index.urls')),
 ]

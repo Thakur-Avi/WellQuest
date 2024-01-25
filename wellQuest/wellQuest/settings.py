@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'mathfilters',
     'cal_count',
     'find_exe',
+    'fitness_index',
 ]
 
 MIDDLEWARE = [
