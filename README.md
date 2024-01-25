@@ -29,9 +29,40 @@ The landing page doesn't just stop at inspiration; it also helps you navigate yo
 - **Muscle-Specific Exercises:**
   - Receive personalized exercise recommendations targeting specific muscle groups. Tailor your fitness routine to achieve a harmonious and well-rounded physique.
 
-## Prequisites:
-1. wellQuest is a python based web application so it is necessary to have python in your system. you can download the latest version of python from it's official website.
-2. Must have 'virtualenv' installed in your system. You can install it by entering the command 'pip install virtualenv' in your terminal.
+### Prerequisites for WellQuest:
+
+1. **Python:**
+   - WellQuest is a Python-based web application, so it is essential to have Python installed on your system. Download the latest version of Python from its official website: [Python Downloads](https://www.python.org/downloads/).
+
+2. **Virtual Environment:**
+   - A virtual environment helps manage project-specific dependencies. Install 'virtualenv' by entering the following command in your terminal:
+     ```
+     pip install virtualenv
+     ```
+     Once installed, you can create a virtual environment using:
+     - On Windows:
+       ```
+       python -m venv env
+       ```
+     - On macOS/Linux:
+       ```
+       python3 -m venv env
+       ```
+
+### Steps for Virtual Environment Setup:
+
+   - **Activate the Virtual Environment:**
+     - On Windows:
+       ```
+       .\env\Scripts\activate
+       ```
+     - On macOS/Linux:
+       ```
+       source env/bin/activate
+       ```
+
+### Note:
+   - Ensure that the virtual environment is activated before proceeding with the WellQuest setup steps.
 
 ## How to Embark on Your WellQuest Journey:
 
