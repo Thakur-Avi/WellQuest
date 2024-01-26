@@ -1,21 +1,25 @@
 <!doctype html>
 {%load static%}
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link href="{%static 'fitness_index.css'%}" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png'%}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png'%}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png'}">
-    <link rel="manifest" href="{% static 'favicon/site.webmanifest'%}">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Fitness Index</title>
-  </head>
-  <body style="padding-bottom: 9%;">
-    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+  <title>Fitness Index</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link href="{% static 'fitness_index.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png'%}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png'%}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png'}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest'%}">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body style="height: fit-content;">
+  <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
   <form class="form" id="form" onsubmit="return validateForm()" style="margin-bottom: 5%;">
   <div class="row-one">
     <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Age</p>
@@ -87,7 +91,7 @@
         h2.appendChild(b);
         h2.appendChild(r);
         
-        var footerElement = document.querySelector('.site-footer');
+        var footerElement = document.querySelector('.content-container');
 
         footerElement.parentNode.insertBefore(h2, footerElement);
         footerElement.parentNode.insertBefore(h1, footerElement);
@@ -99,19 +103,24 @@
     </script>
     </div>
   </form>
-  
-  <footer class="site-footer" style="position: relative; align-items: center;">
-        <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        </ul>
-        <p class="copyright">
-            <a href="/">wellQuest</a><br>
-            Team - BitVibe
-        </p>
-  </footer>
+
+    <div class="content-container" style="padding: 1% 15% 1% 15%; text-align: center; align-items: center;">
+      <p style="font-family: monospace;">Body Mass Index (BMI) is a measure of body fat based on weight and height, providing a numerical assessment of a person's overall body composition. It is commonly used as an indicator of whether an individual is underweight, normal weight, overweight, or obese.</p>
+      <img src="{% static 'images/bmi.jpg'%}" style="width: 100%; height: auto; border-radius: 15px; margin-top: 4%;">
+    </div>
+    
+    <footer class="site-footer" style="position: relative; align-items: center;">
+          <ul class="social-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+          <p class="copyright">
+              <a href="/">wellQuest</a><br>
+              Team - BitVibe
+          </p>
+    </footer>
   </body>
 </html>

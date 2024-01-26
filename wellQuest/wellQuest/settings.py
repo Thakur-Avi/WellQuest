@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cal_count',
     'find_exe',
     'fitness_index',
+    'mental_health',
 ]
 
 MIDDLEWARE = [

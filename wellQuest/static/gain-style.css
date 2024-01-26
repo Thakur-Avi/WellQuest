@@ -4,7 +4,7 @@ body {
 
 .logo {
   width: 70%;
-  height: 39%;
+  height: auto;
 }
 
 h1 {
