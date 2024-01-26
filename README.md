@@ -88,10 +88,16 @@ To effortlessly set up and run WellQuest on your local environment, follow these
 ### 4. Navigate Back to the Main Directory:
    - Use the 'cd ..' command to return to the directory containing the `env` folder.
 
-### 5. Enter the WellQuest Directory:
+### 5. Install dependencies from requirements.txt:
+   - Type the command in terminal and press enter.
+     ```
+     pip install -r requirements.txt
+     ```
+
+### 6. Enter the WellQuest Directory:
    - Move to the WellQuest directory using the 'cd wellQuest' command in the terminal.
 
-### 6. Start the WellQuest Server:
+### 7. Start the WellQuest Server:
    - Type 'python manage.py runserver' in the terminal and press Enter.
      ```
      python manage.py runserver
