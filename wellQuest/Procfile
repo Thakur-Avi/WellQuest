@@ -1,0 +1,1 @@
+web: gunicorn wellQuest.wsgi --log-file -
